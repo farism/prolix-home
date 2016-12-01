@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "'./node_modules/.bin/babel' src --out-dir .deploy",
-    "start": "node .deploy/index.js",
+    "start": "node src/index.js",
     "dev": "node -r babel-core/register src/index.js"
   },
   "author": "Faris Mustafa <farismmk@gmail.com>",
