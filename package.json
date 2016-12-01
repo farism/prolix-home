@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir .deploy",
+    "build": "node_modules/.bin/babel src --out-dir .deploy",
     "postinstall": "npm run build",
-    "start": "node ./deploy/index.js",
-    "dev": "node -r babel-core/register ./src/index.js",
+    "start": "node .deploy/index.js",
+    "dev": "node -r babel-core/register src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
